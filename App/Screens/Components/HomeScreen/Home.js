@@ -1,9 +1,7 @@
 import styles from './style';
 import React, { Component } from 'react'
-import { Text, View, ScrollView, FlatList } from 'react-native'
+import { Text, View, ScrollView, FlatList , Image } from 'react-native'
 import { withNavigation } from "react-navigation";
-import Image from 'react-native-remote-svg'
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import Star from '../../../Images/star.svg';
 import Arrow from '../../../Images/arrow.svg';
 import Back from '../../../Images/back.svg';
@@ -62,7 +60,9 @@ class Home extends Component {
 
                 <View style={styles.titleRow1}>
                   <Help style={styles.details}/>
+                  <View style ={styles.view9}>
                   <Text style={styles.txt}>تفاصيل الطلب</Text>
+                  </View>
 
                 </View>
               </View>
@@ -73,13 +73,13 @@ class Home extends Component {
               <View style={styles.cancelRequestView}>
                 <Text style={styles.txt}>إلغاء الطلب</Text>
               </View>
-            </View>
+            </View> 
 
             <View style={styles.Table}>
               <View style={styles.txtViewTable}>
                 <Text style={styles.txt3}>فئة السيارة</Text>
               </View>
-              <View style={styles.viewIconDown}>
+              <View style={styles.viewIconDown1}>
                 <Down style={styles.icontable}  />
               </View>
               <View style={styles.line} />
@@ -133,7 +133,7 @@ class Home extends Component {
                             </View>
 
                             <View style={styles.view5}>
-                              <Help style={styles.user}  />
+                          <Image style = {styles.user} source = {require('../../../Images/hh.png')}/>
                             </View>
                           </View>
 

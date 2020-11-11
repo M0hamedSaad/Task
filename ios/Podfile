@@ -8,7 +8,6 @@ target 'task' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'RNCustomFonts', :path => '../node_modules/react-native-custom-fonts'
 
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
