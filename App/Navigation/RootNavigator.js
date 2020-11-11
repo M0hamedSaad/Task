@@ -8,17 +8,18 @@ import SplashScreen from '../Screens/SplashScreen';
 
 const Navigator = createStackNavigator({
   
+    HomeScreen :
+    {
+       screen :  HomeScreen ,  
+    },  
+  
     SplashScreen:
     {
         screen: SplashScreen, navigationOptions: {
             header: null
         }
     },
-    HomeScreen :
-    {
-       screen :  HomeScreen ,  
-    },  
-  
+   
   
 });
 
